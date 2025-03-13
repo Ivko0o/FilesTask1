@@ -11,6 +11,19 @@
 -h -> Извежда помощно съобщение на екрана (help message). Не използва втория параметър.
 */
 
+/*
+Task 1.
+Write a program that receives two parameters from the command line - the first is a command - one of: -c, -C , -w, -l, -L, -s or -h. The second is a file name.
+The program should parse the supplied text-weight file according to the command and output information about the respectively:
+-c -> Number of characters in the file (all characters).
+-C -> Number of non-empty characters in the file - characters with code greater than 32 and less than 127.
+-w -> Number of words in the file. Words are separated by any number of blank characters.
+-l -> Number of lines in the file.
+-L -> Number of non-blank lines in the file. They must contain at least one character (no matter what).
+-s -> Displays statistics about the file. It includes each of the above metrics, but also what percentage of the total number of characters each non-blank character occurs.
+-h -> Displays a help message on the screen. Does not use the second parameter.
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
